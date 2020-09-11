@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+.foggy_city {
+  height: 100vh;
+  width: 100%;
+  background: white
+}
+
+.absolute-bg {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.fog-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 3;
+}
+
+.first_fog {
+  background: url("./Images/big_long_fog.png");
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: left;
+  animation: marquee 60s linear infinite;
+}
+
+.second_fog {
+  background: url("./Images/short_fast_fog.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+}
