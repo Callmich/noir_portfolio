@@ -68,7 +68,7 @@
 .fog-img {
   position: absolute;
   height: 100vh;
-  width: 500vw;
+  width: 1000vw;
   z-index: 3;
 }
 
@@ -77,11 +77,11 @@
   background-repeat: repeat-x;
   background-size: auto;
   background-position: left;
-  animation: foggy 80s linear infinite;
+  animation: foggy 90s linear infinite;
 }
 
 .second_fog {
-  background: url("./Images/short_fast_fog.png");
+  background: url("./Images/fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -120,6 +120,6 @@
   }
 
   100% {
-    transform: translate3d(-200vw, 0, 0);
+    transform: translate3d(-300vw, 0, 0);
   }
 }
